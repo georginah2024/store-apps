@@ -7,6 +7,10 @@ app.use('/product', require('./routes/product'))
 app.use('/sales', require('./routes/sales'))
 
 
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the DressStore App")
+});
 app.listen(3000)
 
 
